@@ -64,6 +64,7 @@ body {
 
 .navigation_menus ul li a:hover {
   text-decoration: underline;
+  color: tomato;
 }
 .navigation_menus ul:last-child a {
   margin-right: 28px;
@@ -412,8 +413,7 @@ body {
 
 /* ----------Image Swiper------------ */
 .image_swiper_container {
-  width: 70%;
-  height: 400px;
+  width: 87%;
   margin: auto;
   border-radius: 10px;
   filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07))
@@ -455,7 +455,6 @@ body {
 }
 .swiper-slide img {
   width: 40%;
-  height: 400px;
   object-fit: cover;
   object-position: center;
 }
@@ -484,8 +483,9 @@ body {
 
 .review_swiper_section h1 {
   text-align: center;
-  color: #d3d3d3;
+  color: white;
   padding-top: 30px;
+  font-size: 30px;
   font-weight: 700;
 }
 .review_swiper {
@@ -515,13 +515,16 @@ body {
 }
 
 .review_swiper-slide p {
-  font-size: 25px;
+  font-size: 20px;
   text-transform: capitalize;
   font-weight: 600;
   color: white;
   line-height: 30px;
 }
 .review_swiper-slide span {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
   color: #1a6692;
 }
 
@@ -1439,10 +1442,13 @@ footer {
 }
 
 .costumers {
-  background-color: #f7f7f7;
   width: 190px;
   height: 130px;
   margin: 0 10px 20px 10px;
+}
+.costumers > img {
+  display: block;
+  width: 100%;
 }
 
 /* ------------------------MEDIA QUERIES---------------------- */
@@ -1660,9 +1666,9 @@ footer {
     margin: 0 20px 40px 20px;
   }
   /* ----------Image Swiper------------ */
-  .image_swiper_container {
+  /* .image_swiper_container {
     display: none;
-  }
+  } */
   /*------------------ Review Swiper------------------ */
   .review_swiper_section {
     margin-top: 40px;
